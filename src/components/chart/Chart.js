@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import './chart.scss';
 import {
   AreaChart,
   Area,
@@ -59,8 +60,10 @@ export default class Chart extends PureComponent {
     return (
       <div className="chart">
         <div className="title">{this.props.title}</div>
-        <ResponsiveContainer width={700} height="100%">
+        <ResponsiveContainer width="100%" aspect={this.props.aspect}>
           <AreaChart
+            width={730}
+            height={250}
             data={data}
             margin={{
               top: 10,
