@@ -10,7 +10,7 @@ function CircularStatic(props) {
         variant="determinate"
         {...props}
         size="200px"
-        thickness="1.5"
+        thickness={1.5}
       />
       <Box
         sx={{

@@ -4,8 +4,9 @@ import './home.scss';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import Widget from '../../components/widgets/Widget';
-import Featured from "../../components/featured/Featured";
-import Chart from "../../components/chart/Chart";
+import Featured from '../../components/featured/Featured';
+import Chart from '../../components/chart/Chart';
+import Table from '../../components/table/Table';
 function Home() {
   return (
     <div className="home">
@@ -20,7 +21,11 @@ function Home() {
         </div>
         <div className="charts">
           <Featured />
-          <Chart />
+          <Chart title="Last 6 months (income)" />
+        </div>
+        <div className="listContainer">
+          <div className="listTitle">Latest Transactions</div>
+          <Table />
         </div>
       </div>
     </div>

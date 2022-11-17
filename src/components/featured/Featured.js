@@ -1,7 +1,6 @@
 import React from "react";
 import "./featured.scss";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-// import { CircularProgressbar } from "react-circular-progressbar";
 import CircularStatic from "../CircularProgressBar";
 import "react-circular-progressbar/dist/styles.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -15,9 +14,6 @@ const Featured = () => {
         <MoreVertIcon fontSize="small" />
       </div>
       <div className="bottom">
-        {/* <div className="featuredChart">
-          <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
-        </div> */}
         <CircularStatic value={70}/>
         <p className="title">Total sales made today</p>
         <p className="amount">$420</p>
