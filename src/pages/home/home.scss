@@ -3,7 +3,7 @@
 }
 
 .homeContainer {
-  flex-grow: 6;
+  flex: 6;
   .widgets {
     display: flex;
     padding: 20px;
@@ -30,5 +30,4 @@
       margin-bottom: 15px;
     }
   }
-
 }
