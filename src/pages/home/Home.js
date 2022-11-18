@@ -1,8 +1,8 @@
 import React from 'react';
 import './home.scss';
 
-import Navbar from '../../components/Navbar';
-import Sidebar from '../../components/Sidebar';
+import Navbar from '../../components/navbar/Navbar';
+import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widgets/Widget';
 import Featured from '../../components/featured/Featured';
 import Chart from '../../components/chart/Chart';
@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div className="charts">
           <Featured />
-          <Chart title="Last 6 months (income)" aspect={2 / 1}/>
+          <Chart title="Last 6 months (income)" aspect={2 / 1} />
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
