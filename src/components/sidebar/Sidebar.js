@@ -14,29 +14,39 @@ import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSyst
 import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 
+import { Link } from 'react-router-dom';
+
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">ukadmin</span>
+        <Link to="/">
+          <span className="logo">ukadmin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
+          <Link to="/">
+            <li>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </li>
+          </Link>
           <p className="title">LISTS</p>
-          <li>
-            <PersonOutlineIcon className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <StoreIcon className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/users">
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products">
+            <li>
+              <StoreIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <CreditCardIcon className="icon" />
             <span>Orders</span>
@@ -46,7 +56,6 @@ function Sidebar() {
             <span>Delivery</span>
           </li>
           <p className="title">USEFUL</p>
-
           <li>
             <InsertChartIcon className="icon" />
             <span>Stats</span>
